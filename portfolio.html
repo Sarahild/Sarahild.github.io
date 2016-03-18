@@ -1,29 +1,62 @@
-<!DOCTYPE html>
 
+<!doctype html>
+<html>
 <head>
-  <title>Sarah Rust - Portfolio</title>
-  <meta charset="UTF-8">
-  <link href="me.css" rel="stylesheet" type="text/css">
+    <title>Sarah Rust</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="me.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Londrina+Sketch' rel='stylesheet' type='text/css'>
 </head>
-<body>
-  <header>
-    <ul>
-      <li><a href="about.html">about</a></li>
-      <li><a href="resume.pdf" target="_blank">resume</a></li>
-      <li><a href="index.html">Sarah Rust</a></li>
-      <li><a href="portfolio.html">portfolio</a></li>
-      <li><a href="contact.html">contact</a></li>
-    </ul>
-    <hr>
-  </header>
-  <main>
-    <div class="category">
-      <div>Development</div>
-      <div>Art</div>
-    </div>
-    <div class="circle"></div>
-  </main>
-  <footer>
-  </footer>
+
+<body id="portfolio">
+<nav>
+  <ul>
+    <li>
+      <a href="./index.html" onclick="showAbout();">
+        About
+      </a>
+    </li>
+    <li>
+      <a href="./SarahRustResume.pdf">
+        Resume
+      </a>
+    </li>
+    <li>
+      <a href="./index.html">
+        Sarah Rust
+      </a>
+    </li>
+    <li>
+      <a href="./portfolio.html">
+        Portfolio
+      </a>
+    </li>
+    <li>
+      <a>
+        Contact
+      </a>
+      <ul>
+        <li><a href="mailto:serust@live.unc.edu">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/sarahrusty" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/sarahild.the.silent" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/catromancer/" target="_blank">Instagram</a></li>
+        <li><a href="https://twitter.com/colonelrusty" target="_blank">Twitter</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div id="about">
+  <h1>
+    Developer. Gamer. Artist. Cat.
+  </h1>
+  <p>
+    That's my TL;DR. I am a BS/MS Computer Scientist at UNC Chapel Hill in my fourth year by day; by night, I am the Technical Lead on the SIGGRAPH Student Volunteer Subcommittee. I love to make graphics and video games. If you want either, contact me!
+  </p>
+</div>
+<script src="me.js"></script>
 </body>
 </html>

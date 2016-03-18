@@ -1,15 +1,18 @@
-body {
+body{
     background-color: white;
     background-color: rgb(255,255,255);
     margin: 0;
     padding: 0;
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #b7410e;
+}
+
+body#home {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 div {
@@ -46,6 +49,7 @@ nav {
   height: 60px;
   margin: 0;
   border-bottom: 1px solid black;
+
   /* Remove highlighting on nav*/
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -53,7 +57,6 @@ nav {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE/Edge */
   user-select: none; /* non-prefixed version, currently not supported by any broswer */
-
 }
 
 nav ul {
