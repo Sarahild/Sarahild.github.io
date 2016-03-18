@@ -1,111 +1,128 @@
-/*body {
+body {
+    background-color: white;
+    background-color: rgb(255,255,255);
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #b7410e;
+}
+
+div {
+  float: right;
   background: white;
+  width: 400px;
+  display: none;
+  border-radius: 0px 0px 0px 10px; /* only want bottom left corner rounded */
+}
+
+div.toggleOn {
+  display: block;
+}
+
+div h1 {
+  text-align: center;
+  font-family: 'Londrina Sketch', cursive;
+  color: #b7410e;
+  font-size: 2rem;
+}
+
+div p {
+  padding: 10px;
+  margin: 0px;
 }
 
 h1 {
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-}
-
-li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-/*li:nth-child(3) {
-  font-size: 3rem;
-}*/
-/*li {
-  font-size: 3rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-#resume {
-  height: 100%;
-}
-#main {
-  height: 1000px;
-}
-
-.circle {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  border: 200px solid green;
-  background: green;
-}
-
-.category {
-}
-
-.category div {
-  color: black;
-}*/
-
-body {
-    background-color: rgb(63,155,249);
-    background-image: url("background.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-}
-.box {
-    width: 600px;
-    margin: 5em auto;
-    padding: 50px;
-    background-color: rgba(255,255,255,0.4);
-    border-radius: 1em;
-}
-
-#topbar {
+nav {
   width: 100%;
-  height: 50px;
   background: white;
+  height: 60px;
   margin: 0;
+  border-bottom: 1px solid black;
+  /* Remove highlighting on nav*/
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* non-prefixed version, currently not supported by any broswer */
+
 }
 
-#topbar ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-#topbar ul li {
-  display: inline;
+nav > ul > li {
+  display: inline-block;
   margin-right: 20px;
-  margin-top: 10px;
+  position: relative;
+}
+
+nav > ul > li:nth-child(3) {
+  font-size: 3rem;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+nav ul li ul {
+  position: absolute;
+  left: 0;
+  display: none;
+  background: white;
+}
+
+nav ul li ul li {
+  display: block;
+  padding: 4px 12px;
+  min-width: 60px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+a {
+  cursor: pointer;
+  color: #b7410e;
+  text-decoration: none;
 }
 
 a:link, a:visited {
-    color: #38488f;
-    text-decoration: none;
+  color: #b7410e;
+  text-decoration: none;
 }
+
 @media (max-width: 700px) {
-    body {
-        background-color: #fff;
-    }
-    .box {
-        width: auto;
-        margin: 0 auto;
-        border-radius: 0;
-        padding: 1em;
-    }
+  nav > ul > li {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 467px) {
+  nav > ul > li {
+    margin-right: 0px;
+  }
+
+  nav > ul > li:first-child, nav > ul > li:nth-child(4) {
+    margin-right: 40px;
+  }
+
+  nav > ul {
+    margin: auto;
+    width: 300px;
+  }
+
+  nav {
+    height: 100px;
+  }
 }
